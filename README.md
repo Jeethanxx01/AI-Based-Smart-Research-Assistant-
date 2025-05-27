@@ -90,6 +90,16 @@ gemmi.api.key=YOUR_API_KEY
   - Select "Load Temporary Add-on"
   - Choose `manifest.json`
 
+## 🔑 API Configuration
+
+### Google Gemini API
+1. Visit [Google AI Studio](https://makersuite.google.com/app/apikey)
+2. Create API Key
+3. Add to `.env`:
+   ```ini
+   GOOGLE_API_KEY=your_api_key_here
+   ```
+
 ## 📁 Project Structure
 ```
 .
