@@ -1,97 +1,136 @@
-# AI-Based-Research-Assistant
+# 🤖 AI-Based Smart Research Assistant
 
-A powerful browser extension that lets you **summarize any selected text instantly** and manage notes efficiently. Built with **Spring Boot** and **Gemmi API** on the backend, and a simple **HTML, CSS, JavaScript** frontend.
+<div align="center">
 
----
+[![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)](https://spring.io/projects/spring-boot)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Gemini API](https://img.shields.io/badge/Gemini_API-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev/)
 
-## ✨ Features
+</div>
 
-- 🔍 **Smart Summarization**  
-  Highlight any text and click "Summarize" to generate a concise, AI-powered summary using the Gemmi API.
+## 📝 Overview
 
-- 🗒️ **Easy Note Management**  
-  Save summaries into your personal notes for future reference. Ideal for researchers, students, and professionals.
+An innovative browser extension that revolutionizes the way researchers, students, and professionals interact with online content. This AI-powered tool provides instant text summarization and efficient note management capabilities, making research and information gathering more productive than ever.
 
-- 🌐 **Browser Extension**  
-  Designed as a lightweight browser extension for quick, on-the-go access.
+## 📂 Quick Navigation
+- [View Project Images](Images/)
 
----
+## ✨ Key Features
 
-## 🛠️ Tech Stack
+### 🎯 Smart Text Summarization
+- **AI-Powered Analysis**: Utilizes advanced Gemini API for intelligent text processing
+- **Instant Results**: Get concise summaries with a single click
+- **Context-Aware**: Maintains key information while reducing text length
 
-- **Frontend**: HTML, CSS, JavaScript  
-- **Backend**: Spring Boot  
-- **AI Summarization**: Gemmi API
+### 📚 Note Management System
+- **Organized Storage**: Save and categorize your summaries efficiently
+- **Quick Access**: Retrieve past summaries with ease
+- **Cross-Platform**: Access your notes across different devices
 
----
+### 🌐 Browser Integration
+- **Seamless Experience**: Works directly within your browser
+- **Cross-Browser Support**: Compatible with Chrome and Firefox
+- **Lightweight Design**: Minimal impact on browser performance
+
+## 🛠️ Technical Architecture
+
+### Frontend
+- **HTML5 & CSS3**: Modern, responsive design
+- **JavaScript**: Dynamic user interface
+- **Browser Extension API**: Native browser integration
+
+### Backend
+- **Spring Boot**: Robust server-side processing
+- **RESTful API**: Clean, scalable architecture
+- **Secure Authentication**: Protected user data
+
+### AI Integration
+- **Gemini API**: State-of-the-art text processing
+- **Natural Language Processing**: Advanced text analysis
+- **Machine Learning**: Continuous improvement in summarization quality
 
 ## 🚀 Getting Started
 
 ### Prerequisites
+- Java 17 or higher
+- Maven 3.6+
+- Modern web browser (Chrome/Firefox)
+- Gemini API credentials
 
-- Java 17+
-- Maven
-- A web browser (Chrome or Firefox)
-- A Gemmi API Key
+### Installation
 
-### Backend Setup (Spring Boot)
-
+1. **Clone the Repository**
 ```bash
 git clone https://github.com/your-username/your-repo.git
-cd your-repo/backend
+cd your-repo
+```
+
+2. **Backend Setup**
+```bash
+cd backend
 ./mvnw spring-boot:run
-npm run deploy
 ```
-Make sure to add your Gemmi API key in application.properties:
 
-properties
-Copy
-Edit
+3. **Configure API Key**
+```properties
+# application.properties
 gemmi.api.key=YOUR_API_KEY
-
-### Frontend Setup (Browser Extension)
-
-- Navigate to the extension/ directory.
-
-- Load the extension in your browser:
-
-- Chrome: Go to chrome://extensions/, enable Developer Mode, click Load Unpacked, and select the extension/ folder.
-
-- Firefox: Go to about:debugging, click This Firefox, then Load Temporary Add-on, and select manifest.json.
-
-
-### Project Structure
-
-```markdown
-.
-├── backend/                 # Spring Boot backend for summarization
-│   └── src/
-├── extension/               # Browser extension source
-│   ├── manifest.json
-│   ├── popup.html
-│   ├── popup.js
-│   └── style.css
-└── README.md
 ```
 
+4. **Browser Extension Installation**
+- **Chrome**: 
+  - Visit `chrome://extensions/`
+  - Enable Developer Mode
+  - Click "Load Unpacked"
+  - Select the `extension/` directory
 
-## 🧪 Example Usage
+- **Firefox**:
+  - Visit `about:debugging`
+  - Click "This Firefox"
+  - Select "Load Temporary Add-on"
+  - Choose `manifest.json`
 
-Select any text on a webpage.
+## 📁 Project Structure
+```
+.
+├── backend/                 # Spring Boot application
+│   ├── src/
+│   │   ├── main/
+│   │   └── test/
+│   └── pom.xml
+├── extension/              # Browser extension
+│   ├── manifest.json
+│   ├── popup/
+│   ├── content/
+│   └── background/
+└── docs/                   # Documentation
+```
 
-Click the extension icon → “Summarize”.
+## 🔮 Roadmap
 
-View the summary and optionally save it to your notes.
+### Phase 1 (Current)
+- [x] Basic text summarization
+- [x] Note management system
+- [x] Browser extension integration
 
-## 📌 Future Enhancements
-Cloud sync for notes
+### Phase 2 (In Progress)
+- [ ] Cloud synchronization
+- [ ] Multi-language support
+- [ ] Advanced search capabilities
 
-Support for multiple languages
+### Phase 3 (Planned)
+- [ ] Collaborative features
+- [ ] AI-powered insights
+- [ ] Custom summarization rules
 
-Tagging and search features for notes
+## 🤝 Contributing
 
-## 📃 License
-This project is licensed under the MIT License.
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-## 🙌 Contributions
-Feel free to open issues or pull requests. Suggestions and feedback are welcome!
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
